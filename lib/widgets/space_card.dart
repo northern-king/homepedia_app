@@ -70,7 +70,7 @@ class SpaceCard extends StatelessWidget {
             ),
             Text.rich(
               TextSpan(
-                text: '\$${space.price}',
+                text: '\Rp ${space.price}',
                 style: orangeTextStyle.copyWith(
                   fontSize: 16,
                 ),
@@ -85,8 +85,33 @@ class SpaceCard extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 7,
             ),
+
+            Container(
+                    width: 50,
+                    height: 20,
+                    decoration: BoxDecoration(
+                      color: brownColor,
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        
+                        Text(
+                          space.status,
+                          style: whiteTextStyle.copyWith(fontSize: 13),
+                        ),
+                      ],
+                    ),
+                  ),
+            SizedBox(
+              height: 4,
+              
+            ),
+            
             Text(
               '${space.city}, ${space.country}',
               style: greyTextStyle,

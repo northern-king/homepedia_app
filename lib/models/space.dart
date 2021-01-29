@@ -5,6 +5,7 @@ class Space {
   double price;
   String city;
   String country;
+  String status;
   int rating;
 
   Space({
@@ -15,5 +16,6 @@ class Space {
     this.name,
     this.price,
     this.rating,
+    this.status,
   });
 }
